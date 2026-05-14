@@ -25,6 +25,25 @@ app.get("/three", function(req,res){
     res.status(401).end("Unauthorized!");
 });
 
+app.get("/four", function(req,res){
+    let MyObj = [
+        {
+        name: "AKIB",
+        City: "Chattogram",
+        Country: "Bangladesh"
+        },
+        {
+        name: "AKIB",
+        City: "Chattogram",
+        Country: "Bangladesh"
+        },
+        ]
+    res.json(MyObj);
+});
+
+app.get("/five", function(req,res){
+    res.download("./uploads/akib.jpg");
+});
 
 
 
