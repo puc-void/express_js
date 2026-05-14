@@ -21,6 +21,10 @@ app.post("/terms", function (req, res) {
     res.send("Terms Page");
 });
 
+app.get("/three", function(req,res){
+    res.status(401).end("Unauthorized!");
+});
+
 
 
 
